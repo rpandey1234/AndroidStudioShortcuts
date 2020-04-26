@@ -7,15 +7,15 @@ import android.util.Log
 private const val TAG = "MainActivity"
 class MainActivity : AppCompatActivity() {
     /**
-     * Editing shortcuts:
-     * 1. Project quick fix
-     * 2. Move cursor one word at a time
-     * 3. Reformat code
-     * 4. Comment/uncomment code block
-     * 5. Autocomplete
-     * 6. Move code block up/down
-     * 7. Rename a variable or method
-     * 8. Select multiple occurrences
+     * Navigation shortcuts:
+     * 1. Search everywhere
+     * 2. Open tool window
+     * 3. Close tool windows
+     * 4. Open file (use fuzzy smart search)
+     * 5. Jump to declaration
+     * 6. Recent files
+     * 7. Find usages
+     * 8. Navigate between files: with tabs or by place of last edit
      */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
