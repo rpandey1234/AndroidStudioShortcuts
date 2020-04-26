@@ -25,7 +25,7 @@ class EmployeeSickDayManager : EmployeeManager() {
         sickDays -= days
     }
 
-    fun veryLongMethodNameWithManyParameters(
+    fun coolMethod(
         param1: String, employeeId: Int,
         level: Int,
         manager: Employee

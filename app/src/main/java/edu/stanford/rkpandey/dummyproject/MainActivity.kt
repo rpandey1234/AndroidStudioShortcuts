@@ -1,14 +1,8 @@
 package edu.stanford.rkpandey.dummyproject
 
-import androidx.appcompat.app.AppCompatActivity
+
 import android.os.Bundle
-import android.util.Log
-import android.view.KeyboardShortcutGroup
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import androidx.core.content.ContextCompat
-import java.util.*
+import androidx.appcompat.app.AppCompatActivity
 
 private const val TAG = "MainActivity"
 class MainActivity : AppCompatActivity() {
@@ -24,13 +18,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val employee = Employee(123, "John", "Smith", false)
-        Log.i(TAG, "Created new employee")
+        val employee2 = Employee(123, "John", "Smith", false)
+        val employee3 = Employee(123, "John", "Smith", false)
 
         // Save the employee name in a local variable
         val fullName = employee.fullName()
 
         val sickDayManager = EmployeeSickDayManager()
         sickDayManager.rightMethod()
+        sickDayManager.coolMethod()
         // Define method which takes in employee name and id
         myMethod(fullName, employee.employeeId)
 
