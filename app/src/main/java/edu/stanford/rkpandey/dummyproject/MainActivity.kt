@@ -3,19 +3,21 @@ package edu.stanford.rkpandey.dummyproject
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.KeyboardShortcutGroup
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
+import androidx.core.content.ContextCompat
+import java.util.*
 
 private const val TAG = "MainActivity"
 class MainActivity : AppCompatActivity() {
     /**
-     * Navigation shortcuts:
-     * 1. Search everywhere
-     * 2. Open tool window
-     * 3. Close tool windows
-     * 4. Open file (use fuzzy smart search)
-     * 5. Jump to declaration
-     * 6. Recent files
-     * 7. Find usages
-     * 8. Navigate between files: with tabs or by place of last edit
+     * (More) editing shortcuts:
+     * 1. Optimize imports
+     * 2. Delete whole line
+     * 3. Duplicate line or selection
+     * 4. Show hint for method parameters
      */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
