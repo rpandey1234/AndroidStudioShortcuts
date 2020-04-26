@@ -2,37 +2,33 @@ package edu.stanford.rkpandey.dummyproject
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_main.*
 
+private const val TAG = "MainActivity"
 class MainActivity : AppCompatActivity() {
-
     /**
-     * TODO: Navigation tips:
-     * 1. Search everywhere - double shift
-     * 2. Open tool windows
-     * 3. Close tool windows
-     * 4. Open file (use fuzzy smart search)
-     * 5. Jump to declaration- Cmd + B
-     * 6. Recent files- Cmd + E
-     * 7. Find usages - Alt + F7
-     * 8. Navigate between files: with tabs or by place of last edit
+     * Editing shortcuts:
+     * 1. Project quick fix
+     * 2. Move cursor one word at a time
+     * 3. Reformat code
+     * 4. Comment/uncomment code block
+     * 5. Autocomplete
+     * 6. Move code block up/down
+     * 7. Rename a variable or method
+     * 8. Select multiple occurrences
      */
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        tvHelloWorld.text = "Updated text!"
         val employee = Employee(123, "John", "Smith", false)
-        // Show toast of employee name
+        Log.i(TAG, "Created new employee")
+
+        // Save the employee name in a local variable
         employee.fullName()
+
+        // Define method which takes in employee name and id
+
         val sickDayManager = EmployeeSickDayManager()
-
-        // Call method with many parameters and refactor method name
-
-        // Difference between tab and enter for auto-complete
         sickDayManager.wrongMethod()
-
-        // Create instance of vacation manager and save into a local variable
     }
 }

@@ -1,9 +1,11 @@
 package edu.stanford.rkpandey.dummyproject
 
+import android.util.Log
+
 private const val TAG = "EmployeeVacationManager"
 class EmployeeVacationManager : EmployeeManager() {
 
-    var vacationDays: Int
+    var vacationDays: Int = 0
 
     init {
         Log.i(TAG, "constructing EmployeeVacationManager")
